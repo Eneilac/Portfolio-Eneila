@@ -29,11 +29,11 @@ const Projects = () => {
               <div className="relative h-full flex flex-col rounded-lg justify-center">
                 <img
                   alt="gallery"
-                  className="w-full sm:h-58 sm:min-h-96 lg:min-h-96 sm:max-h-64 object-cover rounded-lg scale-60 sm:scale-100 lg:scale-100"
+                  className="w-full sm:h-58 sm:min-h-96 lg:min-h-96 sm:max-h-64 object-cover rounded-lg scale-60 sm:scale-100 lg:scale-100 bg-gray-500"
                   src={project.image}
                 />
                 <div className="absolute inset-0 px-5 py-10 z-5 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100 flex flex-col justify-center rounded-b-md">
-                  <h2 className="tracking-widest text-sm font-medium text-green-400 mb-1">
+                  <h2 className="tracking-widest text-lg font-medium text-green-400 mb-1">
                     {project.subtitle}
                   </h2>
                   <h1 className="text-lg font-medium text-white mb-3">

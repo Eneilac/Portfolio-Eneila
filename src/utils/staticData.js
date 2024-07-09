@@ -5,6 +5,7 @@ import { IoTerminal } from "react-icons/io5";
 import { IoHardwareChipSharp } from "react-icons/io5";
 import { HiMiniCheckBadge } from "react-icons/hi2";
 import { GrLinkedin } from "react-icons/gr";
+import { BsPersonWorkspace } from "react-icons/bs";
 
 
 
@@ -22,18 +23,51 @@ export const projects = [
     title: "Street Fighter: ",
     subtitle: "Simulator",
     description:
-      "El proyecto trata de una simulacion del famoso juego de Street Fighter, desarrollado en Angular",
+      "El proyecto trata de una simulacion del famoso juego de Street Fighter, desarrollado en Angular, para controlarlo es mediante las flechas del teclado y la barra espaciadora para aceptar.",
     image: "./projects/street.png",
     link: "https://street-angular.netlify.app/",
   },
   {
     title: "SPIN ACADEMY",
-    subtitle:"Web desarrollada en Angular",
-    description:"Trabajo para la empresa Sport Innovation Academy, se trata de una single page desarrollada en angular desde 0 a partir de un diseño previo que se me entregó y desplegada en IONOS",
+    subtitle: "Web desarrollada en Angular",
+    description: "Trabajo para la empresa Sport Innovation Academy, se trata de una single page desarrollada en angular desde 0 a partir de un diseño previo que se me entregó y desplegada en IONOS",
     image: "./projects/academy.png",
-    link:"https://academy.grupo-spin.com/#/inicio"
+    link: "https://academy.grupo-spin.com/#/inicio"
   }
 ];
+
+export const experience = [
+  {
+    title: 'Programador Full-Stack',
+    company: 'Sport Innovation Academy',
+    type: 'Jornada completa - Hibrido',
+    date: 'oct. 2023 - Actualidad',
+    country: 'Cáceres',
+    icon: './companys/SIA.jpeg',
+    description: 'Desarrollo de una aplicación para gestión deportiva, en ReactJs y Python con Flask'
+  },
+
+  {
+    title: 'Desarrollador en prácticas',
+    company: 'VIEWNEXT',
+    type: 'Jornada completa - Presencial',
+    date: 'mar. 2023 - jun. 2023',
+    country: 'Cáceres',
+    icon: './companys/viewnext-logo.png',
+    description: 'Programación en COBOL, Programación en DB2, Programación de JCL, Partición de JCL'
+  },
+
+  {
+    title: 'Desarrollador Angular',
+    company: 'IES Valle del jerte',
+    type: 'Jornada completa - remoto',
+    date: 'mar. 2023 - jul. 2023',
+    country: 'Plasencia',
+    icon: './companys/logoIes.png',
+    description: 'Proyecto de innovación TIC-TAPSD: La vida conectada -Teleasistencia-'
+  },
+
+]
 
 export const education = [
   {
@@ -91,6 +125,7 @@ export const achievements = [
 ]
 
 
+
 export const icons = {
   codeIcon: FaLaptopCode,
   arrowRightIcon: FaArrowRight,
@@ -99,6 +134,7 @@ export const icons = {
   chipIcon: IoHardwareChipSharp,
   checkIcon: HiMiniCheckBadge,
   linkedinIcon: GrLinkedin,
+  worksIcon: BsPersonWorkspace,
 }
 
 export const mentions = [

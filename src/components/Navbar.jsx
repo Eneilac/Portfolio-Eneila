@@ -5,7 +5,7 @@ import { icons } from "../utils/staticData"
 const Navbar = () => {
 
     return (
-        <header className="bg-gray-800 md:sticky top-0 z-10">
+        <header className="bg-gray-800 md:sticky top-0 z-10 shadow-white" >
             <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                 <div className="title-font font-medium text-white mb-4 md:mb-0">
                     <a href="#about" className="ml-3 text-xl">
