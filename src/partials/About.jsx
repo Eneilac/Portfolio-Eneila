@@ -1,3 +1,4 @@
+import DownloadCv from "../components/DownloadCv";
 
 const About = () => {
 
@@ -11,9 +12,11 @@ const About = () => {
                     </h1>
                     <h2 className="title-font sm:text-3xl mb-4 font-medium text-white">Desarrollador de software</h2>
                     <p className="mb-8 leading-relaxed text-justify">
-                        Apasionado por crear soluciones digitales innovadoras. Con experiencia en desarrollo front-end y back-end, me especializo en construir aplicaciones web robustas y eficientes. Si estás buscando un colaborador para tu próximo proyecto o simplemente quieres saber más sobre mi trabajo, ¡no dudes en contactarme!
+                        Apasionado por crear soluciones digitales innovadoras.
+                        Con experiencia en desarrollo front-end y back-end, me especializo en construir aplicaciones web robustas y eficientes. Si estás buscando un colaborador para tu próximo proyecto o simplemente quieres saber más sobre mi trabajo, ¡no dudes en contactarme!
 
                     </p>
+
                     <div className="flex justify-center">
                         <a
                             href="#contact"
@@ -26,10 +29,15 @@ const About = () => {
                             Mira mis trabajos anteriores
                         </a>
                     </div>
+                    <div>
+                        {
+                            <DownloadCv />
+                        }
+                    </div>
                 </div>
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 image-gradient">
                     <img
-                        className="object-cover object-center rounded-full select-none"
+                        className="object-cover object-center rounded-b-full select-none opacity-45"
                         alt="hero"
                         src="./me.png"
                     />
