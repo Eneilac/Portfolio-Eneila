@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { toast } from 'sonner';
+import Networks from "../components/Networks";
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -16,7 +17,6 @@ const Contact = () => {
         e.preventDefault();
 
         try {
-            // Enviar el formulario a Netlify
             const form = e.target;
             await fetch('/', {
                 method: 'POST',
@@ -24,17 +24,16 @@ const Contact = () => {
                 body: new URLSearchParams(new FormData(form)).toString(),
             });
 
-            // Limpiar el formulario
             setFormData({
                 name: '',
                 email: '',
                 message: ''
             });
 
-            // Mostrar mensaje de éxito
+
             toast.success('¡Mensaje enviado con éxito!');
         } catch (error) {
-            // Manejar errores de envío
+
             console.error('Error al enviar el formulario:', error);
             toast.error('Hubo un problema al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.');
         }
@@ -43,6 +42,7 @@ const Contact = () => {
     return (
         <section id="contact" className="relative">
             <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
+                <Networks />
                 <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d647.4271166064246!2d-6.376673645897433!3d39.476111619747776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1splaza%20italia!5e0!3m2!1ses!2ses!4v1720545386083!5m2!1ses!2ses"
@@ -88,6 +88,8 @@ const Contact = () => {
                     className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
                     onSubmit={handleSubmit}
                 >
+                    <input type="hidden" name="form-name" value="contact" />
+
                     <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
                         ¡Contáctame!
                     </h2>

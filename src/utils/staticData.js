@@ -9,7 +9,10 @@ import { BsPersonWorkspace } from "react-icons/bs";
 import { SiHtmlacademy } from "react-icons/si";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { GrAchievement } from "react-icons/gr";
-
+import { BiSolidArrowToBottom } from "react-icons/bi";
+import { BiSolidArrowToTop } from "react-icons/bi";
+import { FaGithub } from "react-icons/fa";
+import { MdScreenSearchDesktop } from "react-icons/md";
 
 
 
@@ -20,7 +23,8 @@ export const projects = [
     description:
       "El proyecto consiste en el diseño, creación y explotación de una plataforma software formada por una aplicación web y una aplicación móvil, que sirva a los alumnos del módulo de Teleasistencia para realizar las prácticas necesarias para la capacitación en su titulación.",
     image: "./projects/TLA.png",
-    link: "https://teleasistencia.iesvjp.es/inicio",
+    code: 'https://github.com/Eneilac/teleasistencia-cliente-angular',
+    demo: 'https://teleasistencia.iesvjp.es/inicio',
     technologies: [
       "./technologies/angular.png",
       "./technologies/typescript_logo.png",
@@ -33,7 +37,8 @@ export const projects = [
     description:
       "El proyecto trata de una simulacion del famoso juego de Street Fighter, desarrollado en Angular, para controlarlo es mediante las flechas del teclado y la barra espaciadora para aceptar.",
     image: "./projects/street.png",
-    link: "https://street-angular.netlify.app/",
+    code: null,
+    demo: "https://street-angular.netlify.app/",
     technologies: [
       "./technologies/angular.png",
       "./technologies/typescript_logo.png",
@@ -45,7 +50,8 @@ export const projects = [
     subtitle: "SPIN ACADEMY",
     description: "Trabajo para la empresa Sport Innovation Academy, se trata de una single page desarrollada en angular desde 0 a partir de un diseño previo que se me entregó",
     image: "./projects/academy.png",
-    link: "https://academy.grupo-spin.com/#/inicio",
+    code: null,
+    demo: "https://academy.grupo-spin.com/#/inicio",
     technologies: [
       "./technologies/angular.png",
       "./technologies/javascript.png",
@@ -56,7 +62,8 @@ export const projects = [
     subtitle: "Commandos: Behind Enemy Lines",
     description: "Simulación del juego Commandos: Behind Enemy Lines, ambientado en la segunda guerra mundial, el cual consiste en un grupo de Aliados que intentan recuperar obras de arte en posesión de los nazis. ",
     image: "./projects/commands.png",
-    link: "https://github.com/Eneilac/JavaProjects/tree/Develop/proyectoComandos",
+    code: "https://github.com/Eneilac/JavaProjects/tree/Develop/proyectoComandos",
+    demo: null,
     technologies: [
       "./technologies/java8_logo.png"
     ]
@@ -64,9 +71,10 @@ export const projects = [
   {
     title: "Carrito de compra desarrollado en React",
     subtitle: "ShoppingCart",
-    description: "Esta aplicación simula una tienda en línea con funcionalidades de carrito de compra. Permite a los usuarios seleccionar artículos para comprar y añadirlos a un carrito virtual. El frontend está desarrollado en React, proporcionando una interfaz de usuario interactiva. El backend está implementado en Python utilizando Flask, siguiendo una arquitectura de API REST para gestionar las operaciones de consulta.",
+    description: "Esta aplicación simula una tienda en línea con funcionalidades de carrito de compra. Permite a los usuarios seleccionar artículos para comprar y añadirlos a un carrito virtual. El frontend está desarrollado en React, proporcionando una interfaz de usuario interactiva. El backend está implementado en Python utilizando Flask, siguiendo una arquitectura de API REST para gestionar las operaciones de consulta. Este proyecto cuenta con 2 ramas, una con redux y otra con recoil para el manejo de estados globales",
     image: "./projects/shop.png",
-    link: "https://github.com/Eneilac/Formacion-PIT/tree/master/ShoppingCart",
+    code: "https://github.com/Eneilac/Formacion-PIT/tree/master/ShoppingCart",
+    demo: null,
     technologies: [
       "./technologies/react-icon.png",
       "./technologies/postman.png",
@@ -270,7 +278,7 @@ export const skills = [
     name: "Metodologías Agile",
     icon: "./technologies/agile.png"
   }
-  , 
+  ,
   {
     name: "Jira",
     icon: "./technologies/jira.png"
@@ -331,7 +339,12 @@ export const icons = {
   worksIcon: BsPersonWorkspace,
   academyIcon: SiHtmlacademy,
   linkIcon: FaExternalLinkAlt,
-  achievIcon: GrAchievement
+  achievIcon: GrAchievement,
+  arrowBottomIcon: BiSolidArrowToBottom,
+  arrowTopIcon: BiSolidArrowToTop,
+  githubIcon: FaGithub,
+  demoIcon: MdScreenSearchDesktop
+
 }
 
 export const mentions = [

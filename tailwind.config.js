@@ -6,10 +6,23 @@ export default {
   ],
   theme: {
     extend: {
-      boxShadow: {
-        white: '0 4px 6px -1px rgba(255, 255, 255, 0.1), 0 2px 4px -1px rgba(255, 255, 255, 0.06)'
-      }
+      maxHeight: {
+        '0': '0',
+        'full': '100%',
+        'screen': '100vh',
+        '200': '200px',
+        '500': '500px',
+      },
+      transitionProperty: {
+        'max-height': 'max-height',
+      },
+    },
+  },
+  variants: {
+    extend: {
+      maxHeight: ['responsive', 'hover', 'focus'],
+      transitionProperty: ['responsive', 'motion-safe', 'motion-reduce'],
     },
   },
   plugins: [],
-}
+};

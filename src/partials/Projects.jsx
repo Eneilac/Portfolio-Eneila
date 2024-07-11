@@ -14,7 +14,7 @@ const Projects = () => {
             Proyectos en los que he puesto en práctica gran parte de mis conocimientos.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-72 sm:gap-14 lg:gap-14 sm:grid-cols-2 scale-90">
+        <div className="grid grid-cols-1 gap-72 sm:gap-44 lg:gap-44 sm:grid-cols-2 scale-90">
           {projects.map((project, index) => (
             <div key={index} className="flex justify-center cursor-pointer h-full">
               <ProjectCard project={project} />

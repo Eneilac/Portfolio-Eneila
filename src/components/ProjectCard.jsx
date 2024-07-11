@@ -1,52 +1,54 @@
-import React, { useState } from "react";
+import { useState } from 'react';
+import { icons } from '../utils/staticData'
+
 
 const ProjectCard = ({ project }) => {
-  const [showProjectInfo, setShowProjectInfo] = useState(false);
-
-  const toggleProjectInfo = () => {
-    setShowProjectInfo(!showProjectInfo);
-  };
+  const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="relative h-full flex flex-col rounded-lg justify-center">
-      {/* Contenedor de la imagen */}
-      <div className="relative" onClick={toggleProjectInfo}>
-        <img
-          alt="gallery"
-          className={`w-full h-full min-h-full sm:h-58 sm:min-h-96 lg:min-h-96 sm:max-h-64 object-cover rounded-lg ${
-            showProjectInfo ? "scale-50" : "scale-100"
-          } bg-gray-500`}
-          src={project.image}
-        />
-
-
-
-        {showProjectInfo && (
-          <div className="absolute inset-0 p-5 py-10 z-5 w-full border-4 border-gray-800 min-h-96 sm:min-h-0 bg-gray-900 opacity-100 transition-opacity flex flex-col justify-center rounded-b-md mb-16 overflow-scroll lg:overflow-hidden sm:overflow-hidden">
-            <h2 className="tracking-widest text-lg font-medium text-green-400 mb-1">
-              {project.subtitle}
-            </h2>
-            <h1 className="text-lg font-medium text-white mb-3">
-              {project.title}
-            </h1>
-            <p className="leading-relaxed text-gray-300">
-              {project.description}
-            </p>
-            <div className="flex justify-center mt-3">
-              {project.technologies.map((item, index) => (
-                <img
-                  src={item}
-                  alt="icono tecnologia"
-                  key={index}
-                  className="w-10 h-10 object-contain mr-2"
-                />
-              ))}
+    <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-gray-700 transition duration-300 h-auto">
+      <img
+        src={project.image}
+        alt="Project Background"
+        className="w-full h-56 object-fill"
+        style={{ filter: 'brightness(70%)' }}
+      />
+      <div className="px-6 py-4">
+        <div className="mb-2">
+          <h2 className="text-xl font-bold text-green-300 mb-2">{project.title}</h2>
+          <p className={`text-gray-300 ${expanded ? '' : 'line-clamp-3'}`}>
+            {project.description}
+            <div className='flex gap-5 justify-center mb-4 mt-4'>
+              {
+                project.technologies.map((item, index) => (
+                  <img src={item} key={index} className='max-w-10' alt='icon' />
+                ))
+              }
             </div>
-            <a href={project.link} className="mt-4 text-blue-500 underline">
-              Ver Proyecto
-            </a>
-          </div>
+          </p>
+        </div>
+        {project.description.length > 150 && (
+          <button
+            onClick={() => setExpanded(!expanded)}
+            className="text-gray-100 hover:text-white focus:outline-none bg-gray-900 hover:bg-gray-600 p-2 rounded-sm"
+          >
+            {expanded ? 'Leer menos' : 'Leer más'}
+          </button>
         )}
+      </div>
+      <div className="px-6 py-4">
+        <div className="flex justify-between">
+          {
+            project.code != null ? <a href={project.code} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
+              <icons.githubIcon className="w-6 h-6" />
+            </a> : null
+          }
+          {
+            project.demo != null ? <a href={project.demo} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
+              <icons.demoIcon className="w-6 h-6" />
+            </a> : null
+          }
+        </div>
       </div>
     </div>
   );
