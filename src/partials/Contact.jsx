@@ -12,33 +12,7 @@ const Contact = () => {
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-
-        try {
-            const form = e.target;
-            await fetch('/', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: new URLSearchParams(new FormData(form)).toString(),
-            });
-
-            setFormData({
-                name: '',
-                email: '',
-                message: ''
-            });
-
-
-            toast.success('¡Mensaje enviado con éxito!');
-        } catch (error) {
-
-            console.error('Error al enviar el formulario:', error);
-            toast.error('Hubo un problema al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.');
-        }
-    };
-
+    
     return (
         <section id="contact" className="relative">
             <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
@@ -84,9 +58,7 @@ const Contact = () => {
                 <form
                     name="contact"
                     method="POST"
-                    data-netlify="true"
                     className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
-                    onSubmit={handleSubmit}
                 >
                     <input type="hidden" name="form-name" value="contact" />
 
