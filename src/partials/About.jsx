@@ -37,7 +37,7 @@ const About = () => {
                 </div>
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 image-gradient">
                     <img
-                        className="object-cover object-center rounded-b-full select-none opacity-45"
+                        className="object-cover object-center rounded-b-full select-none opacity-75"
                         alt="hero"
                         src="./me.png"
                     />

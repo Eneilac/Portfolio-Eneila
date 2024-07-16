@@ -16,7 +16,7 @@ const ProjectCard = ({ project }) => {
       <div className="px-6 py-4">
         <div className="mb-2">
           <h2 className="text-xl font-bold text-green-300 mb-2">{project.title}</h2>
-          <p className={`text-gray-300 ${expanded ? '' : 'line-clamp-3'}`}>
+          <div className={`text-gray-300 ${expanded ? '' : 'line-clamp-3'}`}>
             {project.description}
             <div className='flex gap-5 justify-center mb-4 mt-4'>
               {
@@ -25,7 +25,7 @@ const ProjectCard = ({ project }) => {
                 ))
               }
             </div>
-          </p>
+          </div>
         </div>
         {project.description.length > 150 && (
           <button
