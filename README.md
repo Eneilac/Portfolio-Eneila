@@ -1,6 +1,6 @@
 # Eduardo Neila - Portfolio
 
-Este es el repositorio público de mi portafolio como desarrollador de software. El portafolio está desarrollado en React + Vite, haciendo uso de Tailwind CSS para los estilos.
+Este es el repositorio público de mi portfolio como desarrollador de software. El portfolio está desarrollado en React + Vite, haciendo uso de Tailwind CSS para los estilos.
 
 ## Descripción
 
@@ -39,7 +39,7 @@ npm run dev
 ## Proyecto desplegado
 El proyecto está desplegado y funcionando en la siguiente dirección: https://eduardoneila.es/
 
-## Estructura del Portafolio
+## Estructura del Portfolio
 - **Sobre Mí:** Un breve apartado hablando sobre mí, Eduardo Neila, como desarrollador de software. Incluye un botón para descargar mi CV en PDF.
 
 - **Proyectos:** Ejemplos de mis mejores proyectos, mostrando mi experiencia y habilidades prácticas.
@@ -59,6 +59,6 @@ Formación Académica y Licencias Complementarias: Información sobre mi formaci
 ## Licencia
 Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
 
-Gracias por visitar mi portafolio y explorar mi trabajo. ¡Espero que disfrutes navegando por él tanto como yo disfruté creándolo!
+Gracias por visitar mi portfolio y explorar mi trabajo. ¡Espero que disfrutes navegando por él tanto como yo disfruté creándolo!
 
 Eduardo Neila
