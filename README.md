@@ -36,7 +36,7 @@ npm install
 npm run dev
 ```
 
-## Proyecto en desplegado
+## Proyecto desplegado
 El proyecto está desplegado y funcionando en la siguiente dirección: https://eduardoneila.es/
 
 ## Estructura del Portafolio
