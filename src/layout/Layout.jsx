@@ -9,6 +9,7 @@ import Projects from "../partials/Projects";
 import Skills from "../partials/Skills";
 import Suggests from "../partials/Suggests";
 import Training from "../partials/Training";
+import Footer from "../components/Footer";
 
 const Layout = () => {
 
@@ -50,7 +51,8 @@ const Layout = () => {
             <Achievements />
             <Suggests />
             <Contact />
-
+            <Footer/>
+            
             <div className="hidden sm:block lg:block">
                 <Networks />
             </div>
