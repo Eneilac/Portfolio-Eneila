@@ -46,8 +46,9 @@ const Contact = () => {
             <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
                 <Networks />
                 <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d647.4271166064246!2d-6.376673645897433!3d39.476111619747776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1splaza%20italia!5e0!3m2!1ses!2ses!4v1720545386083!5m2!1ses!2ses"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24639.171624756604!2d-6.41131870230869!3d39.471667911087614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd15dfe1495a2363%3A0x690bbafe8741c23!2zQ8OhY2VyZXM!5e0!3m2!1ses!2ses!4v1721978366242!5m2!1ses!2ses"
                         width="100%"
                         height="100%"
                         title="map"
@@ -56,14 +57,14 @@ const Contact = () => {
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
                     />
-                    <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
+                    <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md w-full">
                         <div className="lg:w-1/2 px-6">
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                                DIRECCIÓN
+                                LOCALIDAD
                             </h2>
                             <p className="mt-1">
-                                Marques de Oquendo <br />
-                                Cáceres, 10004
+                                Extremadura <br />
+                                Cáceres
                             </p>
                         </div>
                         <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
