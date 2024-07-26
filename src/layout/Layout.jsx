@@ -41,7 +41,8 @@ const Layout = () => {
 
 
     return (
-        <div className="flex flex-col gap-15 relative">
+
+        <div className="flex flex-col gap-15 relative z-20">
             <Navbar />
             <About />
             <Projects />
@@ -51,8 +52,8 @@ const Layout = () => {
             <Achievements />
             <Suggests />
             <Contact />
-            <Footer/>
-            
+            <Footer />
+
             <div className="hidden sm:block lg:block">
                 <Networks />
             </div>

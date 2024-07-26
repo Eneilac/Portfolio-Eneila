@@ -1,20 +1,29 @@
-
 import './App.css'
 import Layout from './layout/Layout'
-import { Toaster, toast } from 'sonner'
-
+import { Toaster } from 'sonner'
 
 function App() {
-
   return (
-    <main className="text-gray-400 bg-gray-900 body-font">
-      <Toaster
-        expand={true}
-        richColors
-        position="bottom-right"
-      />
-      <Layout />
-    </main>
+    <div className="app-container relative">
+      <div className="area fixed inset-0">
+        <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <main className="text-gray-400 body-font relative z-10">
+        <Toaster expand={true} richColors position="bottom-right" />
+        <Layout />
+      </main>
+    </div>
   )
 }
 

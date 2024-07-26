@@ -3,7 +3,7 @@ import { icons, projects } from "../utils/staticData";
 
 const Projects = () => {
   return (
-    <section id="projects" className="text-gray-400 bg-gray-900 body-font">
+    <section id="projects" className="text-gray-400  body-font">
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-10">
           <icons.codeIcon className="mx-auto w-16 h-16 mb-4" />
