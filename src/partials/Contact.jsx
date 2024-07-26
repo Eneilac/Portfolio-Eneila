@@ -15,8 +15,31 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        toast.success('Enviado con éxito')
-    }
+        const form = e.target;
+        const formDataObj = new FormData(form);
+
+        fetch("/", {
+            method: "POST",
+            body: formDataObj,
+        })
+            .then(response => {
+                if (response.ok) {
+                    toast.success('Enviado con éxito');
+                    form.reset();
+                    setFormData({
+                        name: '',
+                        email: '',
+                        message: '',
+                    });
+                } else {
+                    toast.error('Hubo un error al enviar el formulario');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                toast.error('Hubo un error al enviar el formulario');
+            });
+    };
 
     return (
         <section id="contact" className="relative">
@@ -61,7 +84,6 @@ const Contact = () => {
                     </div>
                 </div>
                 <form name="contact" method="POST" className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0" onSubmit={handleSubmit}>
-
                     <input type="hidden" name="form-name" value="contact" />
                     <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
                         ¡Contáctame!
@@ -97,10 +119,7 @@ const Contact = () => {
                         />
                     </div>
                     <div className="relative mb-4">
-                        <label
-                            htmlFor="message"
-                            className="leading-7 text-sm text-gray-400"
-                        >
+                        <label htmlFor="message" className="leading-7 text-sm text-gray-400">
                             Mensaje
                         </label>
                         <textarea
