@@ -28,6 +28,9 @@ const Footer = () => {
                         <p>
                             Estilos: <a target="_blank" href="https://tailwindcss.com/">Tailwindcss</a>
                         </p>
+                        <p>
+                            Email: <a target="_blank" href="https://docs.netlify.com/forms/setup/">Netlify Forms</a>
+                        </p>
                     </div>
                 </div>
             </div>
