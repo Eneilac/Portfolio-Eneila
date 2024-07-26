@@ -16,7 +16,7 @@ const Footer = () => {
                     </div>
 
                     <div className="mb-6 md:mb-0">
-                        <h5 className="mb-2 font-medium uppercase">Librería utilizadas:</h5>
+                        <h5 className="mb-2 font-medium uppercase">Librerías utilizadas:</h5>
 
 
                         <p>
