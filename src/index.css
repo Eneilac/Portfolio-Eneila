@@ -8,10 +8,6 @@
     -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
 }
 
-html {
-    scroll-behavior: smooth;
-  }
-
 *{
     
         scrollbar-color: rgb(34, 34, 46) rgb(56, 53, 70);
@@ -34,6 +30,7 @@ html {
 
 
 body, html, #root, .app-container {
+  scroll-behavior: smooth;
   height: 100%;
   margin: 0;
   padding: 0;
