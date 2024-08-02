@@ -349,6 +349,12 @@ export const icons = {
 
 export const mentions = [
   {
+    name: "Jaime Martín Moreno",
+    company: "Sports Innovation Academy",
+    quote: "Tuve el privilegio de realizar mis FCT del grado superior bajo la supervisión de Eduardo. Su infinita paciencia, su sobresaliente capacidad de enseñanza y su vasto conocimiento me han permitido profundizar y aplicar de manera efectiva lo aprendido durante mis estudios. Trabajar junto a él ha sido todo un honor.",
+    image: "./suggets/jaime.jpeg"
+  },
+  {
     name: "Moisés Muñoz Sánchez",
     company: "Viewnext",
     quote: "Un gran compañero de estudios, buen trabajador y sobre todo buen amigo. Siempre trabaja de manera profesional y se toma en serio sus responsabilidades.",
