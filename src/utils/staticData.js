@@ -349,6 +349,12 @@ export const icons = {
 
 export const mentions = [
   {
+    name: "Andrei Chiorian",
+    company: "Sports Innovation Academy",
+    quote: "Tuve el placer de trabajar con Eduardo Neila en el desarrollo full stack de una aplicación para la gestión deportiva, utilizando tecnologías como React, Python, MySQL y diversas librerías de React. Eduardo es un compañero excelente en todos los aspectos: siempre dispuesto a colaborar, compartir su conocimiento y brindar apoyo al equipo. Su habilidad técnica es sólida, demostrando un buen dominio tanto del front-end como del back-end, y su capacidad de resolución de problemas fue clave para el éxito del proyecto. Sin duda, es un profesional valioso en cualquier equipo",
+    image: "./suggets/andrei.jpg"
+  },
+  {
     name: "Jaime Martín Moreno",
     company: "Sports Innovation Academy",
     quote: "Tuve el privilegio de realizar mis FCT del grado superior bajo la supervisión de Eduardo. Su infinita paciencia, su sobresaliente capacidad de enseñanza y su vasto conocimiento me han permitido profundizar y aplicar de manera efectiva lo aprendido durante mis estudios. Trabajar junto a él ha sido todo un honor.",
